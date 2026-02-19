@@ -35,9 +35,9 @@
 1. https://www.saucedemo.com/
 
 ## What's New
-1. Implemented TestNg
-2. Implemented Gherkin
-3. Implemented StepDefinitions
-4. Implemented PageObject
-5. Implemented BaseDriver
+1. Implemented TestNg ✅
+2. Implemented Gherkin ✅
+3. Implemented StepDefinitions ✅
+4. Implemented PageObject ✅
+5. Implemented BaseDriver ✅
 
