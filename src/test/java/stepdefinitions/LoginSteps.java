@@ -1,27 +1,26 @@
-package steps;
+package stepdefinitions;
 
 import org.openqa.selenium.By;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import java.time.Duration;
 import org.testng.Assert;
 import base.BaseDriver;
+import pages.LoginPage;
 
-public class Login {
+public class LoginSteps {
 
     WebDriver driver;
     WebDriverWait wait;
-
+    private LoginPage loginPage;
 
     @Given("the user is on the Sauce Labs Demo website")
     public void the_user_is_on_the_sauce_labs_demo_website() {
         BaseDriver.initializeDriver();
-        BaseDriver.openUrl("https://www.saucedemo.com/");
         driver = BaseDriver.getDriver();
+        loginPage = new LoginPage(driver);
+        loginPage.openLoginPage();
     }
 
     @When("the user is login as a standard_user")
