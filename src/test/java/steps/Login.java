@@ -9,26 +9,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.time.Duration;
 import org.testng.Assert;
+import base.BaseDriver;
 
 public class Login {
 
     WebDriver driver;
     WebDriverWait wait;
 
+
     @Given("the user is on the Sauce Labs Demo website")
     public void the_user_is_on_the_sauce_labs_demo_website() {
-        // Mengatur WebDriverManager untuk menangani setup ChromeDriver
-        WebDriverManager.chromedriver().setup();
-        // Membuat instance dari ChromeDriver
-        driver = new ChromeDriver();
-        // Membuat instance dari WebDriverWait dengan waktu tunggu (misalnya, 10 detik)
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        // Maximize the browser window
-        driver.manage().window().maximize();
-        // Membuka halaman Google
-        driver.get("https://www.saucedemo.com/");
-        // Print judul halaman
-        System.out.println("Title of the page is: " + driver.getTitle());
+        BaseDriver.initializeDriver();
+        BaseDriver.openUrl("https://www.saucedemo.com/");
+        driver = BaseDriver.getDriver();
     }
 
     @When("the user is login as a standard_user")
