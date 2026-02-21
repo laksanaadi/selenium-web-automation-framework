@@ -1,6 +1,6 @@
-![Install-Selenium-Java-From-Scratch-e1714959496989](https://github.com/user-attachments/assets/6cfb81c4-79e0-4494-b442-a96585deccd6)
+<img width="1536" height="768" alt="ChatGPT Image Feb 22, 2026, 05_41_49 AM" src="https://github.com/user-attachments/assets/1947848a-d911-4b86-b632-9b2110b4d731" />
 
-# Selenium Java Automation Testing Framework
+# selenium-web-automation-framework
 
 > **Selenium** is an open-source automation tool used for testing web applications across different browsers. It allows developers and testers to automate browser actions like clicking, typing, and navigating web pages. Selenium supports multiple programming languages, including Java, Python, and JavaScript, and is widely used for functional, regression, and cross-browser testing. Its flexibility and extensive browser compatibility make it a popular choice for automating web-based testing.
 
